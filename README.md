@@ -11,7 +11,7 @@ JWT,NODEJS,EXPRESS
 
 ## Features
 
-backend based apllication --- it does not have a frontend.Tested through postman.
+backend based application --- it does not have a frontend.Tested through postman.
 
 Authors
 
