@@ -1,0 +1,16 @@
+// Synchronous
+const syncToken = jwt.sign({payload: { x: 1, y: '2'}}, 'JWT_SECRET');
+console.log(syncToken);
+
+// Asynchronous
+jwt.sign({payload: { x: 1, y: '2'}}, 'JWT_SECRET', (err, asyncToken) => {
+  if (err) throw err;
+  console.log(asyncToken);
+});
+
+
+both of them return a token
+each time you login one token will be generated
+
+the maximum allowed age for tokens to still be valid. It is expressed in seconds or a string describing a time span vercel/ms.
+Eg: 1000, "2 days", "10h", "7d". A numeric value is interpreted as a seconds count. If you use a string be sure you provide the time units (days, hours, etc), otherwise milliseconds unit is used by default ("120" is equal to "120ms").
